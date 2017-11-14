@@ -1,8 +1,8 @@
 /*OUTSIDE COMMENT*/
-function zdp(){
+function print(){
 }
-
 (function main(){
-	/*INSIDE COMMENT*/
-	    console.log("/*OUTSIDE COMMENT*/\n"+zdp.toString()+"\n\n("+main.toString()+")()");
+/*INSIDE COMMENT*/
+print();
+console.log(`/*OUTSIDE COMMENT*/\n${print.toString()}\n(${main.toString()})()`);
 })()

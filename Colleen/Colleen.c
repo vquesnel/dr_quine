@@ -1,12 +1,9 @@
 #include <stdio.h>
-/*
-	outside of my main
-*/
-int zdp(void) { return (1); }
+/* outside of my main */
+int print(void) {
+char *s="#include <stdio.h>%c/* outside of my main */%cint print(void) {%cchar *s=%c%s%c;%creturn(printf(s, 10, 10, 10, 34, s, 34, 10, 10, 10, 10, 10)); }%c%cint main(void) {%c/* inside of my main */%cprint(); }";
+return(printf(s, 10, 10, 10, 34, s, 34, 10, 10, 10, 10, 10)); }
+
 int main(void) {
-	/*
-		inside of my main
-	*/
-	char *s="#include <stdio.h>%c/*%c%coutside of my main%c*/%cint zdp(void) { return (1); }%cint main(void) {%c%c/*%c%c%cinside of my main%c%c*/%c%cchar *s=%c%s%c;%c%czdp();%c%cprintf(s, 10, 10, 9, 10, 10, 10, 10, 9, 10, 9, 9, 10, 9, 10, 9, 34, s, 34, 10, 9, 10, 9); }";
-	zdp();
-	printf(s, 10, 10, 9, 10, 10, 10, 10, 9, 10, 9, 9, 10, 9, 10, 9, 34, s, 34, 10, 9, 10, 9); }
+/* inside of my main */
+print(); }
