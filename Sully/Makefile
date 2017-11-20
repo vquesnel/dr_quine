@@ -1,7 +1,7 @@
 
-NAME= Colleen
+NAME= Sully
 
-SRCS= Colleen.c
+SRCS= Sully.c
 
 OBJS= $(SRCS:.c=.o)
 FLAGS= -Wall -Wextra -Werror
@@ -23,7 +23,7 @@ $(NAME): $(OBJS)
 	@echo "\033[31;1m  | ZDTEAM  @  42 SCHOOL   2 0 1 7 |\033[0m"
 	@echo "\033[31;1m  +--------------------------------+\033[0m"
 	@echo "\n"
-							
+
 all: $(NAME)
 
 clean:
