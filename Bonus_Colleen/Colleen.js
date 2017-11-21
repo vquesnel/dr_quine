@@ -1,8 +1,13 @@
-/*OUTSIDE COMMENT*/
+/*
+  OUTSIDE COMMENT
+*/
 function print(){
+  return;
 }
 (function main(){
-/*INSIDE COMMENT*/
+/*
+  INSIDE COMMENT
+*/
 print();
-console.log(`/*OUTSIDE COMMENT*/\n${print.toString()}\n(${main.toString()})()`);
+return console.log(`/*\n  OUTSIDE COMMENT\n*/\n${print.toString()}\n(${main.toString()})()`);
 })()
